@@ -34,6 +34,12 @@ img {
 .rotate {
   writing-mode: vertical-rl;
 }
-.logo {
+.header__logo {
   width: 96px;
+}
+.artist-section__title-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
 }
