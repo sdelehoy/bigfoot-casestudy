@@ -19,6 +19,8 @@ body {
 h1, h2, h3, h4, h5 {
   font-size: 1.125em;
   line-height: 0.75;
+  padding: 0;
+  margin: 0;
 }
 h1, h3 {
   font-weight: 900;
@@ -29,6 +31,10 @@ h2 {
 /* h3 {
   writing-mode: vertical-rl;
 } */
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
 img {
   display: block;
 }
@@ -43,4 +49,30 @@ img {
   height: 12px;
   background-color: var(--color-yellow);
   border-radius: 50%;
+}
+.header {
+
+}
+.header a {
+  display: flex;
+  flex-direction: column;
+}
+.header__logo {
+  margin-bottom: 36px;
+}
+.header__title-container {
+  position: relative;
+  transform: rotate(90deg);
+  transform-origin: center;
+  width: 96px;
+}
+.header__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  white-space: nowrap;
 }
