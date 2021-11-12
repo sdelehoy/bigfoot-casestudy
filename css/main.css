@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5 {
   font-size: 1.125em;
   line-height: 0.75;
   padding: 0;
-  margin: 0;
 }
 h1, h3 {
   font-weight: 900;
@@ -51,7 +50,7 @@ img {
   border-radius: 50%;
 }
 .header {
-
+  margin-bottom: 150px;
 }
 .header a {
   display: flex;
@@ -65,6 +64,7 @@ img {
   transform: rotate(90deg);
   transform-origin: center;
   width: 96px;
+  height: 96px;
 }
 .header__title {
   position: absolute;
@@ -75,4 +75,10 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   white-space: nowrap;
+}
+.header__title h1 {
+  margin-bottom: 0;
+}
+.header__title h2  {
+  margin-top: 0.5rem;
 }
