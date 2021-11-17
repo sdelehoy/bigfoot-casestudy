@@ -98,3 +98,6 @@ img {
 .header__title h2  {
   margin-top: 0.5rem;
 }
+.artist-section {
+  display: grid;
+}
