@@ -56,24 +56,6 @@ img {
 .rotate {
   writing-mode: vertical-rl;
 }
-.header__logo {
-  width: 96px;
-}
-.artist-section__title {
-  display: flex;
-  flex-direction: row;
-  writing-mode: vertical-rl;
-  vertical-align: baseline;
-}
-.artist-section__title-name {
-  
-}
-.artist-section__title-dot {
-  width: 12px;
-  height: 12px;
-  background-color: var(--color-yellow);
-  border-radius: 50%;
-}
 .header {
   margin-bottom: 150px;
 }
@@ -83,6 +65,7 @@ img {
 }
 .header__logo {
   margin-bottom: 36px;
+  width: 96px;
 }
 .header__title-container {
   position: relative;
@@ -109,4 +92,22 @@ img {
 }
 .artist-section {
   display: grid;
+}
+.artist-section a {
+  display: contents;
+}
+.artist-section__title {
+  display: flex;
+  flex-direction: row;
+  vertical-align: baseline;
+}
+.artist-section__title-name {
+  margin: 0;
+}
+.artist-section__title-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  margin-right: 7px;
 }
