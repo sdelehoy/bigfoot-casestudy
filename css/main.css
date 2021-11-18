@@ -83,6 +83,9 @@ img {
   grid-template-rows: repeat(2, 1fr);
   gap: 24px;
 }
+.artist-section-1 {
+  grid-template-areas: ". title img-lg img-lg" ". img-sm img-lg img-lg";
+}
 .artist-section:hover h3 {
   color: var(--color-yellow);
 }
@@ -98,26 +101,32 @@ img {
 }
 .artist-section__title-name {
   margin: 0;
+  font-size: 1.125rem;
 }
 .artist-section__title-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   background-color: var(--color-yellow);
   border-radius: 50%;
   margin-right: 5px;
+  margin-top: 0.9px;
+}
+.artist-section__img {
+  padding-top: 100%;
+  background-size: cover;
+  filter: grayscale(1);
 }
 .artist-section__img-lg {
   grid-area: img-lg;
-  background-image: url("https://wearebigfoot.com/lib/artist/1_primary_large.jpg");
-  background-size: cover;
 }
 .artist-section__img-sm {
   grid-area: img-sm;
-  background-image: url("https://wearebigfoot.com/lib/artist/1_secondary_large.jpg");
-  background-size: cover;
 }
-.artist-section-1 {
-  grid-template-areas: ". title img-lg img-lg" ". img-sm img-lg img-lg";
+.artist-section__img-lg-adam-beyer {
+  background-image: url("https://wearebigfoot.com/lib/artist/1_primary_large.jpg");
+}
+.artist-section__img-sm-adam-beyer {
+  background-image: url("https://wearebigfoot.com/lib/artist/1_secondary_large.jpg");
 }
 
 /*--Footer--*/
