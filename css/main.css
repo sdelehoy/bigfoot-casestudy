@@ -40,6 +40,8 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/*--Content page specific--*/
 .page-nav {
   grid-area: nav;
   overflow: scroll;
@@ -56,6 +58,8 @@ img {
 .rotate {
   writing-mode: vertical-rl;
 }
+
+/*--Header--*/
 .header {
   margin-bottom: 150px;
 }
@@ -90,8 +94,11 @@ img {
 .header__title h2  {
   margin-top: 0.5rem;
 }
+
+/*--Artist Section--*/
 .artist-section {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .artist-section a {
   display: contents;
@@ -100,6 +107,7 @@ img {
   display: flex;
   flex-direction: row;
   vertical-align: baseline;
+  grid-area: title;
 }
 .artist-section__title-name {
   margin: 0;
@@ -110,4 +118,13 @@ img {
   background-color: var(--color-yellow);
   border-radius: 50%;
   margin-right: 7px;
+}
+.artist-section__img-lg {
+  grid-area: img-lg;
+}
+.artist-section__img-sm {
+  grid-area: img-sm;
+}
+.artist-section-1 {
+  grid-template-areas: ". title img-lg img-lg" ". img-sm img-lg img-lg";
 }
