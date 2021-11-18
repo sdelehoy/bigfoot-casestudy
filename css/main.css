@@ -99,6 +99,8 @@ img {
 .artist-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
 }
 .artist-section:hover h3 {
   color: var(--color-yellow);
@@ -111,6 +113,7 @@ img {
   flex-direction: row;
   vertical-align: baseline;
   grid-area: title;
+  transform: rotate(90deg);
 }
 .artist-section__title-name {
   margin: 0;
@@ -120,13 +123,17 @@ img {
   height: 12px;
   background-color: var(--color-yellow);
   border-radius: 50%;
-  margin-right: 7px;
+  margin-right: 5px;
 }
 .artist-section__img-lg {
   grid-area: img-lg;
+  background-image: url("https://wearebigfoot.com/lib/artist/1_primary_large.jpg");
+  background-size: cover;
 }
 .artist-section__img-sm {
   grid-area: img-sm;
+  background-image: url("https://wearebigfoot.com/lib/artist/1_secondary_large.jpg");
+  background-size: cover;
 }
 .artist-section-1 {
   grid-template-areas: ". title img-lg img-lg" ". img-sm img-lg img-lg";
