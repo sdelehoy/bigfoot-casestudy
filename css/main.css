@@ -42,23 +42,6 @@ img {
   max-width: 100%;
 }
 
-/*--Content page specific--*/
-.page-nav {
-  grid-area: nav;
-  overflow: scroll;
-  background-color: var(--color-gray-light );
-}
-.page-nav__container {
-  padding: 30px;
-}
-.main {
- padding: 30px;
- overflow-y: auto;
- grid-area: main;
-}
-.rotate {
-  writing-mode: vertical-rl;
-}
 
 /*--Header--*/
 .header {
@@ -150,4 +133,29 @@ img {
 }
 .footer__contact-email {
   margin-top: 5px;
+}
+
+/*--Content page specific--*/
+.page-nav {
+  grid-area: nav;
+  overflow: scroll;
+  background-color: var(--color-gray-light );
+}
+.page-nav__container {
+  padding: 30px;
+}
+.page-nav__title {
+  line-height: 5rem;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.main {
+ padding: 30px;
+ overflow-y: auto;
+ grid-area: main;
+}
+.rotate {
+  writing-mode: vertical-rl;
 }
