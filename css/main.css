@@ -122,6 +122,12 @@ img {
     transform: rotate(90deg);
   }
 }
+@media (max-width: 999px) {
+  .artist-section__title {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+}
 .artist-section__title-name {
   margin: 0;
   font-size: 1.125rem;
