@@ -100,6 +100,9 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.artist-section:hover h3 {
+  color: var(--color-yellow);
+}
 .artist-section a {
   display: contents;
 }
