@@ -179,3 +179,18 @@ ul {
 .rotate {
   writing-mode: vertical-rl;
 }
+.component__name {
+  max-width: 100%;
+  background-color: var(--color-black);
+  color: var(--color-gray-light);
+  padding: 10px;
+  margin-bottom: 0;
+}
+.component__img {
+  max-width: 100%;
+  border: 1px solid var(--color-gray-light);
+}
+.component__code {
+  max-width: 100%;
+  border: 1px solid var(--color-gray-light);
+}
