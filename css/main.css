@@ -122,10 +122,10 @@ img {
 .artist-section__img-sm {
   grid-area: img-sm;
 }
-.artist-section__img-lg-adam-beyer {
+.img-lg-adam-beyer {
   background-image: url("https://wearebigfoot.com/lib/artist/1_primary_large.jpg");
 }
-.artist-section__img-sm-adam-beyer {
+.img-sm-adam-beyer {
   background-image: url("https://wearebigfoot.com/lib/artist/1_secondary_large.jpg");
 }
 
