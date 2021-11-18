@@ -9,34 +9,42 @@
   <body>
     <header class="page-nav">
       <div class="page-nav__container">
-        <h1 class=".page-nav__title">Bigfoot Music Management</h1>
+        <div class="component__code header__logo">
+          <img src="https://wearebigfoot.com/src/gfx/mark.svg" alt="logo">
+        </div>
+        <h1>Bigfoot</h1>
+        <h2>Artist &amp; Music Management</h2>
         <nav>
-          <section>
-            <h2><a>Typography</a></h2>
+          <section class="page-nav__section">
+            <h2><a href="#typography">Typography</a></h2>
             <ul>
-              <li><a>h1, h3</a></li>
-              <li><a>h2</a></li>
+              <li><a href="h1">h1, h3</a></li>
+              <li><a href="h2">h2</a></li>
             </ul>
           </section>
-          <section>
-            <h2><a>Atoms</a></h2>
+          <section class="page-nav__section">
+            <h2><a href="#atoms">Atoms</a></h2>
             <ul>
-              <li><a>.header__logo</a></li>
-              <li><a>.artist-section__title-dot</a></li>
+              <li><a href="#header__logo">.header__logo</a></li>
+              <li><a href="#artist-section__title-dot">.artist-section__title-dot</a></li>
             </ul>
           </section>
-          <section>
-            <h2><a>Header</a></h2>
+          <section class="page-nav__section">
+            <h2><a href="#header">Header</a></h2>
             <ul>
-              <li><a>.header</a></li>
-              <li><a>.artist-section__title-dot</a></li>
+              <li><a href="#header">.header</a></li>
             </ul>
           </section>
-          <section>
-            <h2><a>Artist Section</a></h2>
+          <section class="page-nav__section">
+            <h2><a href="#artist-section">Artist Section</a></h2>
             <ul>
-              <li><a>.header</a></li>
-              <li><a>.artist-section</a></li>
+              <li><a href="#artist-section">.artist-section</a></li>
+            </ul>
+          </section>
+          <section class="page-nav__section">
+            <h2><a href="#footer">Footer</a></h2>
+            <ul>
+              <li><a href="#footer">.footer</a></li>
             </ul>
           </section>
         </nav>
@@ -45,10 +53,10 @@
     <main class="main">
     <h1>Web Components</h1>
     
-    <h2>Typography Defaults</h2>
+    <h2 id="typography">Typography Defaults</h2>
     
     <section class="component">
-      <h3 class="component__name">h1, h3</h3>
+      <h3 id="h1" class="component__name">h1, h3</h3>
       <div class="component__img">
         <img srcset="images/header__title-wordmark.png 2x" src="images/header__title-wordmark.png" alt="header title">
       </div>
@@ -58,7 +66,7 @@
     </section>
     
     <section class="component">
-      <h3 class="component__name">h2</h3>
+      <h3 id="h2" class="component__name">h2</h3>
       <div class="component__img">
         <img srcset="images/header__title-subtitle.png 2x" src="images/header__title-subtitle.png" alt="header subtitle">
       </div>
@@ -67,10 +75,10 @@
       </div>
     </section>  
     
-    <h2>Atoms</h2>
+    <h2 id="atoms">Atoms</h2>
     
     <section class="component">
-      <h3 class="component__name">.header__logo</h3>
+      <h3 id="#header__logo" class="component__name">.header__logo</h3>
       <div class="component__img">
         <img srcset="images/header__logo.png 2x" src="images/header__logo.png" alt="header logo">
       </div>
@@ -80,7 +88,7 @@
     </section>
 
     <section class="component">
-      <h3 class="component__name">.artist-section__title-dot</h3>
+      <h3 id=".artist-section__title-dot" class="component__name">.artist-section__title-dot</h3>
       <div class="component__img">
         <img srcset="images/artist-section__title-dot.png 2x" src="images/artist-section__title-dot.png" alt="dot">
       </div>
@@ -89,10 +97,10 @@
       </div>
     </section>
 
-    <h2>Header</h2>
+    <h2 id="header">Header</h2>
     
     <section class="component">
-      <h3 class="component__name">.header</h3>
+      <h3 id="header" class="component__name">.header</h3>
       <div class="component__img">
         <img srcset="images/header.png 2x" src="images/header.png" alt="header">
       </div>
@@ -113,7 +121,7 @@
       </div>
     </section>
 
-    <h2>Artist Section</h2>
+    <h2 id="artist-section">Artist Section</h2>
 
     <section class="component">
       <h3 class="component__name">.artist-section</h3>
@@ -134,10 +142,10 @@
       </div>
     </section>
 
-    <h2>Footer</h2>
+    <h2 id="footer">Footer</h2>
 
     <section class="component">
-      <h3 class="component__name">.footer</h3>
+      <h3 id="footer" class="component__name">.footer</h3>
       <div class="component__img">
         <img srcset="images/footer.png 2x" src="images/footer.png" alt="footer">
       </div>
