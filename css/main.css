@@ -17,7 +17,7 @@ body {
   font-size: 1.125rem;
 }
 h1, h2, h3, h4, h5 {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: 0.75;
   padding: 0;
 }
@@ -44,20 +44,39 @@ img {
 .header {
   margin-bottom: 150px;
 }
+@media (max-width: 999px) {
+  .header {
+    width: 100%;
+  }
+}
 .header a {
   display: flex;
-  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .header a {
+    flex-direction: column;
+  }
 }
 .header__logo {
   margin-bottom: 36px;
   width: 96px;
 }
+@media (max-width: 999px) {
+  .header__logo {
+    width: 54px;
+    margin-right: 24px;
+  }
+}
 .header__title-container {
   position: relative;
-  transform: rotate(90deg);
-  transform-origin: center;
   width: 96px;
   height: 96px;
+}
+@media (min-width: 1000px) {
+  .header__title-container {
+  transform: rotate(90deg);
+  transform-origin: center;
+  }
 }
 .header__title {
   position: absolute;
@@ -97,7 +116,11 @@ img {
   flex-direction: row;
   vertical-align: baseline;
   grid-area: title;
-  transform: rotate(90deg);
+}
+@media (min-width: 1000px) {
+  .artist-section__title {
+    transform: rotate(90deg);
+  }
 }
 .artist-section__title-name {
   margin: 0;
