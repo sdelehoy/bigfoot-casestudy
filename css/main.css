@@ -48,6 +48,11 @@ img {
   padding: 120px 144px 96px 144px;
   gap: 24px;
 }
+@media (max-width: 999px) {
+  .home-page__main {
+    padding: 0px 24px 96px;
+  }
+ }
 
 
 /*--Header--*/
@@ -57,6 +62,7 @@ img {
 @media (max-width: 999px) {
   .header {
     width: 100%;
+    margin: 24px;
   }
 }
 .header a {
@@ -104,10 +110,12 @@ img {
 .header__title h2  {
   margin-top: 0.5rem;
 }
-.home-page__header {
-  position: fixed;
-  top: 0;
-  padding: 24px;
+@media (min-width: 999px) {
+  .home-page__header {
+    position: fixed;
+    top: 0;
+    padding: 24px;
+  }
 }
 
 /*--Artist Section--*/
@@ -126,18 +134,22 @@ img {
 .artist-section-3 {
   grid-template-areas: ". . img-lg img-lg" "img-sm title img-lg img-lg";
 }
+.artist-section.artist-section-3 h3 {
+  margin-right: auto;
+}
 .artist-section-4 {
   grid-template-areas: "img-lg img-lg . img-sm" "img-lg img-lg title .";
 }
-.artist-section.artist-section-4 .artist-section__title {
-  margin-top: ;
+.artist-section.artist-section-4 h3 {
   margin-right: auto;
+  align-self: flex-end;
 }
 .artist-section:hover h3 {
   color: var(--color-yellow);
 }
 .artist-section a {
   display: contents;
+  align-self: flex-end;
 }
 .artist-section__title {
   display: flex;
