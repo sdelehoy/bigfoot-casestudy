@@ -16,6 +16,9 @@ body {
   font-weight: 400;
   font-size: 1.125rem;
 }
+.main-page__body {
+  background-color: var(--color-gray-light);
+}
 h1, h2, h3, h4, h5 {
   font-size: 1.125rem;
   line-height: 0.75;
@@ -127,8 +130,8 @@ img {
   grid-template-areas: "img-lg img-lg . img-sm" "img-lg img-lg title .";
 }
 .artist-section.artist-section-4 .artist-section__title {
-  margin-top: auto;
-  margin-right: 100px;
+  margin-top: ;
+  margin-right: auto;
 }
 .artist-section:hover h3 {
   color: var(--color-yellow);
@@ -142,20 +145,48 @@ img {
   vertical-align: baseline;
   grid-area: title;
 }
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .artist-section__title {
     transform: rotate(90deg);
   }
-}
+} */
 @media (max-width: 999px) {
   .artist-section__title {
     grid-column: 1/-1;
     grid-row: 1;
   }
 }
-.artist-section__title-name {
+.artist-section__title {
   margin: 0;
   font-size: 1.125rem;
+}
+.artist-section__title-name {
+  display: flex;
+  flex-direction: row;
+  vertical-align: baseline;
+  margin: 0;
+  font-size: 1.125rem;
+  grid-area: title;
+}
+@media (min-width: 1000px) {
+  .artist-section__title-name {
+    writing-mode: vertical-rl;
+  }
+}
+@media (max-width: 999px) {
+  .artist-section__title-name {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+}
+.artist-section__title-name::before {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  content: "";
+  margin-bottom: 8px;
 }
 .artist-section__title-dot {
   width: 14px;
