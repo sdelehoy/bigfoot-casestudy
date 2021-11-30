@@ -125,20 +125,45 @@ img {
   grid-template-rows: repeat(2, 1fr);
   gap: 24px;
 }
+@media (max-width: 1000px) {
+  .artist-section {
+    grid-template-rows: auto repeat(2, 1fr);
+  }
+}
 .artist-section-1 {
   grid-template-areas: ". title img-lg img-lg" ". img-sm img-lg img-lg";
+}
+@media (max-width: 1000px) {
+  .artist-section-1 {
+    grid-template-areas: ". . . ." ". title img-lg img-lg" ". img-sm img-lg img-lg";
+  }
 }
 .artist-section-2 {
   grid-template-areas: "img-lg img-lg img-sm ." "img-lg img-lg title .";
 }
+@media (max-width: 1000px) {
+  .artist-section-2 {
+    grid-template-areas: ". . . ." "img-lg img-lg img-sm ." "img-lg img-lg title .";
+  }
+}
 .artist-section-3 {
   grid-template-areas: ". . img-lg img-lg" "img-sm title img-lg img-lg";
+}
+@media (max-width: 1000px) {
+  .artist-section-3 {
+    grid-template-areas: ". . . ." ". . img-lg img-lg" "img-sm title img-lg img-lg";
+  }
 }
 .artist-section.artist-section-3 h3 {
   margin-right: auto;
 }
 .artist-section-4 {
   grid-template-areas: "img-lg img-lg . img-sm" "img-lg img-lg title .";
+}
+@media (max-width: 1000px) {
+  .artist-section-4 {
+    grid-template-areas: ". . . ." "img-lg img-lg . img-sm" "img-lg img-lg title .";
+  }
 }
 .artist-section.artist-section-4 h3 {
   margin-right: auto;
@@ -175,20 +200,20 @@ img {
 .artist-section__title-name {
   display: flex;
   flex-direction: row;
-  vertical-align: baseline;
   margin: 0;
   font-size: 1.125rem;
-  grid-area: title;
 }
 @media (min-width: 1000px) {
   .artist-section__title-name {
     writing-mode: vertical-rl;
+    grid-area: title;
   }
 }
 @media (max-width: 999px) {
   .artist-section__title-name {
     grid-column: 1/-1;
     grid-row: 1;
+    margin-bottom: -20px;
   }
 }
 .artist-section__title-name::before {
@@ -198,7 +223,7 @@ img {
   background-color: var(--color-yellow);
   border-radius: 50%;
   content: "";
-  margin-bottom: 8px;
+  margin: 0 8px 8px 0;
 }
 .artist-section__title-dot {
   width: 14px;
