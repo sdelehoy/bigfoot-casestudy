@@ -172,6 +172,9 @@ img {
 .artist-section:hover h3 {
   color: var(--color-yellow);
 }
+.artist-section:hover .artist-section__img {
+  filter: grayscale(1) blur(0);
+}
 .artist-section a {
   display: contents;
   align-self: flex-end;
@@ -202,6 +205,7 @@ img {
   flex-direction: row;
   margin: 0;
   font-size: 1.125rem;
+  transition: 200ms;
 }
 @media (min-width: 1000px) {
   .artist-section__title-name {
@@ -236,7 +240,9 @@ img {
 .artist-section__img {
   padding-top: 100%;
   background-size: cover;
-  filter: grayscale(1);
+  filter: grayscale(1) blur(3px);
+  clip-path: padding-box;
+  transition: 400ms;
 }
 .artist-section__img-lg {
   grid-area: img-lg;
