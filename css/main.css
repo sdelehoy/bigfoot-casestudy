@@ -227,7 +227,12 @@ img {
   background-color: var(--color-yellow);
   border-radius: 50%;
   content: "";
-  margin: 0 8px 8px 0;
+  margin: 0 0 8px 0;
+}
+@media (max-width: 999px) {
+  .artist-section__title-name::before {
+    margin: 0 8px 0 0;
+  }
 }
 .artist-section__title-dot {
   width: 14px;
