@@ -1,3 +1,4 @@
+/*--Global--*/
 :root {
   --font-sans-serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --color-yellow: #ffb800;
@@ -16,9 +17,6 @@ body {
   font-weight: 400;
   font-size: 1.125rem;
 }
-.main-page__body {
-  background-color: var(--color-gray-light);
-}
 h1, h2, h3, h4, h5 {
   font-size: 1.125rem;
   line-height: 0.75;
@@ -30,9 +28,6 @@ h1, h3 {
 h2 {
   font-weight: 400;
 }
-/* h3 {
-  writing-mode: vertical-rl;
-} */
 a {
   color: var(--color-black);
   text-decoration: none;
@@ -42,6 +37,12 @@ img {
   max-width: 100%;
 }
 
+
+
+/*--Home Page--*/
+.home-page__body {
+  background-color: var(--color-gray-light);
+}
 .home-page__main {
   display: flex;
   flex-direction: column;
@@ -53,6 +54,7 @@ img {
     padding: 0px 24px 96px;
   }
  }
+ 
 
 
 /*--Header--*/
