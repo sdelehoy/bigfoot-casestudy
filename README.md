@@ -5,7 +5,7 @@
 
 This is a project for the Web Development course at Minneapolis College of Art and Design. In this example, I dissected the [Bigfoot Music Management homepage](https://wearebigfoot.com), and then developed a simple component library from the study. I then rebuilt the homepage with the components.
 
-- [Initial Design Study](https://sdelehoy.github.io/bigfoot-casestudy/Assets/Web_Design_Study.pdf)
+- [Initial Design Study](https://sdelehoy.github.io/bigfoot-casestudy/assets/web_design_study.pdf)
 - [Component Library](https://sdelehoy.github.io/bigfoot-casestudy/components/)
 - [Homepage Recreation](https://sdelehoy.github.io/bigfoot-casestudy/)
 
